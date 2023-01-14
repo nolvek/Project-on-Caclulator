@@ -1,3 +1,6 @@
+import os
+def clearscr():
+    os.system('cls' if os.name == 'nt' else 'clear')
 print("Привет! Это программа создана для перевода из десятичной сисетмы в любые другие системы счисления")
 print("")
 
@@ -50,3 +53,7 @@ while True:
           break
     elif cnt != 1:
         break
+    elif cnt == 1:
+        clearscr()
+        continue
+       
